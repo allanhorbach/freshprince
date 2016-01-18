@@ -1,4 +1,4 @@
-tml {
+html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -46,22 +46,11 @@ letter-spacing: 0.03em;
 .top-navigation .links li:hover {
     cursor: pointer;
     color: #333333;
+    position: fixed;
+width: 100%;
+z-index: 9999;
 }
-img.bg {
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-    
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-    
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-button {
+.button {
     width: 9.688rem;
     background-color: #f15a29;
     border-color: #f15a29;
@@ -77,11 +66,22 @@ button:hover {
     border-color: #cf3d0e;
     cursor: pointer;
 }
-
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
-    top:50%;
-    left: 50%;
-      margin-top: -50px;
-  margin-left: -100px;
-  }
+.cases .devices {
+    width: 33.3333333%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 4em;
+    position: fixed;
+width: 100%;
+z-index: 9999;
+}
+.introduction {
+    background-image: url('../img/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+}
